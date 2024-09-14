@@ -1,5 +1,5 @@
-// const token = "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"; 
-const token = "iU6Mht1tKWwAtdsMvGIb93X6QIVjJybR"
+const token = "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"; 
+
 const inputTxt = document.getElementById("inputtxt");
 const image = document.getElementById("img");
 const button = document.getElementById("btn");
