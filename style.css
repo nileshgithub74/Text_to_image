@@ -1,0 +1,112 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the entire form and image */
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+}
+
+/* Header styling */
+h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Input text styling */
+#inputtxt {
+    width: 80%; /* Makes input width smaller, 80% of the container */
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center; /* Center the text inside the input */
+    outline: none;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border 0.3s ease;
+}
+
+/* Input text focus state */
+#inputtxt:focus {
+    border: 2px solid #007BFF;
+}
+
+/* Button styling */
+#btn {
+    padding: 12px 25px;
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Button hover and active effect */
+#btn:hover {
+    background-color: #0056b3;
+}
+
+#btn:active {
+    transform: scale(0.98);
+}
+
+/* Styling for the image and loading states */
+#img {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    /* Center the image within the container */
+}
+
+/* Loader image styling */
+#img[src="img/loading.gif"] {
+    width: 50px; /* Smaller loading image */
+    height: 50px;
+    margin: 0 auto; /* Ensure the loader is centered */
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 22px;
+    }
+    
+    #inputtxt {
+        width: 100%; /* Full width on smaller screens */
+        font-size: 14px;
+    }
+    
+    #btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
